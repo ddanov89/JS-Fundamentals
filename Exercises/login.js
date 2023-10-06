@@ -1,6 +1,8 @@
 function login(input){
     let username = input[0];
     let password = "";
+        // let pass = username[::-1]; взима последния индекс
+
     for ( let i = username.length - 1; i >= 0; i--){
         password += username[i];
     }
