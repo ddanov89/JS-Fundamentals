@@ -20,7 +20,7 @@ rightPlace('Str_ng', 'I', 'Strong');
 
 // function rightPlace(str, symbol, result) {
  //let res = str.replace( "_", symbol);
-    //let output = res === result? "Matched": "Not matched";
+    //let output = res === result ? "Matched": "Not matched";
     //console.log(output); 
 //}
 //rightPlace('Str_ng', 'I', 'Strong');
