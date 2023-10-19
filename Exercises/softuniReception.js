@@ -11,7 +11,7 @@ function softUniReception(arr) {
         studentCount -= totalCapacity;
         neededHours++;
      
-        if (neededHours % 4 === 0) {
+        if (neededHours % 4 == 0) {
           neededHours++;
         }
       }
