@@ -9,7 +9,7 @@ function secretChat(arr) {
             console.log(message);
         } else if (commandArr.includes("Reverse")) {
             if (message.includes(commandArr[1])) {
-                message = message.replace(commandArr[1], "")
+                message = message.replace(commandArr[1], "");
                 let reversed = commandArr[1].split("").reverse().join("");
                 message = message + reversed;
                 console.log(message);
