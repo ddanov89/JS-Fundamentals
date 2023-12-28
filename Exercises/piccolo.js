@@ -11,12 +11,12 @@ function picollo(arr) {
 
     for (let [key, value] of entries) {
         if (value == "OUT") {
-         delete parkingLot[key];
+            delete parkingLot[key];
         }
     }
     if (Object.keys(parkingLot).length === 0) {
         console.log("Parking Lot is Empty");
-    }else {
+    } else {
         let keys = Object.keys(parkingLot).sort();
         for (let key of keys) {
             console.log(key);
