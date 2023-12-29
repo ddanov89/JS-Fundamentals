@@ -19,9 +19,7 @@ function travelTime(input) {
                 }
             }
         }
-
     });
-
     let sortedCountries = Object.entries(countries)
         .sort(sortCountries);
 
