@@ -30,7 +30,7 @@ function thePianist(arr) {
         } else if (commandInfo[0] == "Remove") {
             if (pieces.has(commandInfo[1])) {
                 pieces.delete(commandInfo[1]);
-                console.log(`Successfully removed ${commandInfo[1]}`);
+                console.log(`Successfully removed ${commandInfo[1]}!`);
             } else {
                 console.log(`Invalid operation! ${commandInfo[1]} does not exist in the collection.`);
             }
