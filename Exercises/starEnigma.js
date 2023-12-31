@@ -35,8 +35,8 @@ function starEnigma(arr) {
             }
         }
     }
-    attackPlanets.sort((a,b) => a.localeCompare(b));
-    destroyedPlanets.sort((a,b) => a.localeCompare(b));
+    attackPlanets.sort((a, b) => a.localeCompare(b));
+    destroyedPlanets.sort((a, b) => a.localeCompare(b));
     console.log(`Attacked planets: ${attackPlanets.length}`);
     attackPlanets.forEach(planet => console.log(`-> ${planet}`));
     console.log(`Destroyed planets: ${destroyedPlanets.length}`);
