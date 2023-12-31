@@ -20,9 +20,11 @@
 
 
 function sequences(arr) {
+    
     arr = arr.map(el => JSON.parse(el));
     arr.forEach(el => el.sort((a, b) => b - a));
     let resultArr = [];
+
     for (let i = 0; i < arr.length; i++) {
         let currentArr = arr[i];
         let isUnique = true;
