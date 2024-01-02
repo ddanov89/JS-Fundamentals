@@ -3,17 +3,21 @@ function schoolGrades(arr) {
     let student = {};
 
     for (let i = 0; i < arr.length; i++) {
+
         let studentInfo = arr[i].split(" ");
         let studentName = studentInfo.shift();
         let grades = studentInfo.map(Number);
+
         if (student.hasOwnProperty(studentName)) {
             student[studentName] = student[studentName].concat(grades);
         } else {
             student[studentName] = grades;
         }
     }
+
     let keys = Object.keys(student);
     keys.sort();
+    
     for (let key of keys) {
         let grade = student[key].reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     let avg = grade / student[key].length;
